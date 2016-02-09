@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Project1Checkpoint" uploadOnCheckin="14214c32-c1ed-4fda-a410-ba8d6b9db037" filePermissions="420" folderPermissions="493">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Project1Checkpoint" uploadOnCheckin="14214c32-c1ed-4fda-a410-ba8d6b9db037" filePermissions="420" folderPermissions="493">
     <serverData>
       <paths name="Project1Checkpoint">
         <serverdata>
@@ -11,5 +11,6 @@
       </paths>
     </serverData>
     <option name="myUploadOnCheckinName" value="Project1Checkpoint" />
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
