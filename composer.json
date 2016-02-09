@@ -1,5 +1,5 @@
 {
   "autoload": {
-    "psr-4": {"Wumpus\\": "lib/Wumpus"}
+    "psr-4": {"Steampunk\\": "lib/Steampunk"}
   }
 }

@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . "/../../vendor/autoload.php";
+
 /** @file
  * @brief Empty unit testing template
  * @cond 
@@ -8,9 +10,9 @@
 class SteampunkTest extends \PHPUnit_Framework_TestCase
 {
 	const SEED = 1422668587;
-	public function test_constructorCheckpoint() {
+	public function test_constuct() {
 		$steampunkGame = new Steampunk(self::SEED);
-		$this->assertInstanceOf('SteampunkGame\Steampunk', $steampunkGame);
+		$this->assertInstanceOf('Steampunk\Steampunk', $steampunkGame);
 
 
 	}
