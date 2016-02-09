@@ -8,5 +8,11 @@
  */
 class Steampunk
 {
+    public function __construct($seed = null) {
+        if($seed === null) {
+            $seed = time();
+        }
 
+        srand($seed);
+    }
 }
