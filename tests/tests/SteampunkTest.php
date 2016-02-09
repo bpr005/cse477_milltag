@@ -1,5 +1,5 @@
 <?php
-
+echo __DIR__ . "/../../vendor/autoload.php";
 require __DIR__ . "/../../vendor/autoload.php";
 
 /** @file
@@ -11,8 +11,8 @@ class SteampunkTest extends \PHPUnit_Framework_TestCase
 {
 	const SEED = 1422668587;
 	public function test_constuct() {
-		$steampunkGame = new Steampunk(self::SEED);
-		$this->assertInstanceOf('Steampunk\Steampunk', $steampunkGame);
+		$steampunkGame = new SteampunkGame(self::SEED);
+		$this->assertInstanceOf('SteampunkGame', $steampunkGame);
 
 
 	}
