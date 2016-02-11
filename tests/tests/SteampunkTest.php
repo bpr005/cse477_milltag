@@ -10,8 +10,8 @@ class SteampunkTest extends \PHPUnit_Framework_TestCase
 {
 	const SEED = 1422668587;
 	public function test_construct() {
-		$steampunk = new Steampunk(self::SEED);
-		$this->assertInstanceOf('Steampunk', $steampunk);
+		$steampunk = new Steampunk\Steampunk(self::SEED);
+		$this->assertInstanceOf("Steampunk\Steampunk", $steampunk);
 
 
 	}
