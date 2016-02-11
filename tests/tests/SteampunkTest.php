@@ -6,12 +6,12 @@ require __DIR__ . "/../../vendor/autoload.php";
  * @cond 
  * @brief Unit tests for the class 
  */
-class SteampunkGameTest extends \PHPUnit_Framework_TestCase
+class SteampunkTest extends \PHPUnit_Framework_TestCase
 {
 	const SEED = 1422668587;
-	public function test_constuct() {
-		$steampunkGame = new SteampunkGame(self::SEED);
-		$this->assertInstanceOf('SteampunkGame', $steampunkGame);
+	public function test_construct() {
+		$steampunk = new Steampunk(self::SEED);
+		$this->assertInstanceOf('Steampunk', $steampunk);
 
 
 	}

@@ -6,6 +6,9 @@
  * Date: 2/9/16
  * Time: 3:51 PM
  */
+
+namespace Steampunk;
+
 class Steampunk
 {
     private $gameSize;
