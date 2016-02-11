@@ -1,5 +1,4 @@
 <?php
-echo __DIR__ . "/../../vendor/autoload.php";
 require __DIR__ . "/../../vendor/autoload.php";
 
 /** @file
@@ -7,7 +6,7 @@ require __DIR__ . "/../../vendor/autoload.php";
  * @cond 
  * @brief Unit tests for the class 
  */
-class SteampunkTest extends \PHPUnit_Framework_TestCase
+class SteampunkGameTest extends \PHPUnit_Framework_TestCase
 {
 	const SEED = 1422668587;
 	public function test_constuct() {

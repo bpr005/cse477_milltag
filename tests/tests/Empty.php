@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . "/../../vendor/autoload.php";
 
 /** @file
  * @brief Empty unit testing template
