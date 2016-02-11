@@ -1,6 +1,5 @@
 <?php
 
-namespace Steampunk;
 /**
  * Created by PhpStorm.
  * User: Cam
@@ -20,7 +19,7 @@ class Steampunk
     }
 
     public function newGame($size) {
-        $this->gameSize =   $size;
+        $this->gameSize = $size;
 
     }
 
