@@ -22,6 +22,13 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * TODO: Description
+     */
+    public function test_presentHeader() {
+
+    }
+
+    /**
      * Checks the HTML output of the gridHtml function
      *  (a) Asserts that a game grid of the correct size is created
      *  (b) Asserts that all buttons are created

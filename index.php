@@ -1,5 +1,6 @@
 <?php
 require 'lib/steampunk.inc.php';
+$view = new Steampunk\SteampunkView($steampunk);
 
 /**
  * Created by PhpStorm.
@@ -21,7 +22,9 @@ require 'lib/steampunk.inc.php';
     <!-- TODO: tests need to be added to all HTML and checks need to be added to check for valid input -->
 
     <body>
-        <!-- TODO: addition of "basic graphics" here -->
+        <!-- TODO: header tag here with the Steampunked game image -->
+        <?php echo $view->presentHeader(); ?>
+
         <form method="post" action="">
             <p>
                 <label for="playerOne">Enter the name for Player 1:</label>

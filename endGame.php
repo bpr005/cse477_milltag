@@ -6,7 +6,7 @@ $view = new Steampunk\SteampunkView($steampunk);
  * Created by PhpStorm.
  * User: Bonnie Reiff
  * Project 1: Steampunked
- * Class: game.php (Main Gameplay Page for the Steampunked game)
+ * Class: endGame.php (Win/Lose Page for the Steampunked game)
  */
 ?>
 
@@ -18,7 +18,7 @@ $view = new Steampunk\SteampunkView($steampunk);
         <title>Steampunked</title>
     </head>
 
-    <!-- A gameplay page -->
+    <!-- A page to announce the end of the game and to indicate the winner/loser -->
     <!-- TODO: all inline PHP should be moved to a separate View class -->
     <!-- TODO: tests need to be added to all HTML and checks need to be added to check for valid input -->
 

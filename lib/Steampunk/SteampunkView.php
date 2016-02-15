@@ -21,6 +21,12 @@ class SteampunkView
         $this->steampunk = $steampunk;
     }
 
+    public function presentHeader() {
+        $html = "";
+
+        return $html;
+    }
+
     public function gridHtml() {
         // Obtain the width/height of the grid from the Steampunk model object
         $gameSize = $this->steampunk->getGameSize();
@@ -42,7 +48,6 @@ class SteampunkView
 
         return $html;
     }
-
 
     /* Private member data */
 
