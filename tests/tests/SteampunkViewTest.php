@@ -2,10 +2,11 @@
 require __DIR__ . "/../../vendor/autoload.php";
 
 /** @file
- * @brief Empty unit testing template
+ * @brief Testing class for SteampunkView class
  * @cond 
  * @brief Unit tests for the class 
  */
+
 class SteampunkViewTest extends \PHPUnit_Framework_TestCase
 {
 	const SEED = 1422668587;
