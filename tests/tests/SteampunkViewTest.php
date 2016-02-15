@@ -15,7 +15,7 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
      */
     public function test_construct() {
         $steampunk = new Steampunk\Steampunk(self::SEED);
-        $view = new Steampunk\Steampunk($steampunk);
+        $view = new Steampunk\SteampunkView($steampunk);
 
         $this->assertInstanceOf('Steampunk\SteampunkView', $view);
     }
