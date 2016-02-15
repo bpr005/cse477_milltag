@@ -13,7 +13,7 @@ require 'lib/steampunk.inc.php';
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Welcome to Stalking the Wumpus</title>
+        <title>Welcome to Steampunked</title>
     </head>
 
     <!-- A welcome and new game page -->
