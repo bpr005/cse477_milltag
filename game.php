@@ -1,5 +1,6 @@
 <?php
 require 'lib/steampunk.inc.php';
+$header = new Steampunk\HeaderView();
 $view = new Steampunk\SteampunkView($steampunk);
 
 /**
@@ -14,7 +15,8 @@ $view = new Steampunk\SteampunkView($steampunk);
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="gameStylesheet.css" type="text/css" rel="stylesheet" />
+        <link href="headerStylesheet.css" type="text/css" rel="header stylesheet" />
+        <link href="gameStylesheet.css" type="text/css" rel="game stylesheet" />
         <title>Steampunked</title>
     </head>
 
@@ -23,9 +25,7 @@ $view = new Steampunk\SteampunkView($steampunk);
     <!-- TODO: tests need to be added to all HTML and checks need to be added to check for valid input -->
 
     <body>
-        <!-- TODO: header tag here with the Steampunked game image -->
-        <?php echo $view->presentHeader(); ?>
-
+        <?php echo $header->presentHeader(); ?>
         <?php echo $view->gridHtml(); ?>
     </body>
 </html>

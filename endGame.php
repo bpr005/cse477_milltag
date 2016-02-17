@@ -1,5 +1,6 @@
 <?php
 require 'lib/steampunk.inc.php';
+$header = new Steampunk\HeaderView();
 $view = new Steampunk\SteampunkView($steampunk);
 
 /**
@@ -14,6 +15,7 @@ $view = new Steampunk\SteampunkView($steampunk);
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href="headerStylesheet.css" type="text/css" rel="stylesheet" />
         <link href="gameStylesheet.css" type="text/css" rel="stylesheet" />
         <title>Steampunked</title>
     </head>
@@ -24,8 +26,7 @@ $view = new Steampunk\SteampunkView($steampunk);
 
     <body>
         <!-- TODO: header tag here with the Steampunked game image -->
-        <?php echo $view->presentHeader(); ?>
-
+        <?php echo $header->presentHeader(); ?>
         <?php echo $view->gridHtml(); ?>
     </body>
 </html>

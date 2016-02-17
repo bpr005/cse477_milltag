@@ -1,5 +1,6 @@
 <?php
 require 'lib/steampunk.inc.php';
+$header = new Steampunk\HeaderView();
 $view = new Steampunk\SteampunkView($steampunk);
 
 /**
@@ -14,6 +15,7 @@ $view = new Steampunk\SteampunkView($steampunk);
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href="headerStylesheet.css" type="text/css" rel="stylesheet" />
         <title>Welcome to Steampunked</title>
     </head>
 
@@ -22,8 +24,7 @@ $view = new Steampunk\SteampunkView($steampunk);
     <!-- TODO: tests need to be added to all HTML and checks need to be added to check for valid input -->
 
     <body>
-        <!-- TODO: header tag here with the Steampunked game image -->
-        <?php echo $view->presentHeader(); ?>
+        <?php echo $header->presentHeader(); ?>
 
         <form method="post" action="">
             <p>
@@ -35,7 +36,7 @@ $view = new Steampunk\SteampunkView($steampunk);
                 <input type="text" name="playerTwo" id="playerTwo">
             </p>
             <p>
-                <label for="gridSize">Choose the grid size for the game:</label><br>
+                <label for="gridSize">Choose the grid size for the game:</label>
                 <select name="gridSize" id="gridSize">
                     <option value="six">6 x 6</option>
                     <option value="ten">10 x 10</option>

@@ -21,12 +21,10 @@ class SteampunkView
         $this->steampunk = $steampunk;
     }
 
-    public function presentHeader() {
-        $html = "";
-
-        return $html;
-    }
-
+    /**
+     * TODO: Description
+     * @return string
+     */
     public function gridHtml() {
         // Obtain the width/height of the grid from the Steampunk model object
         $gameSize = $this->steampunk->getGameSize();
@@ -36,6 +34,11 @@ class SteampunkView
         return $htmlText;
     }
 
+    /**
+     * TODO: Description
+     * @param $gridSize
+     * @return string
+     */
     private function formGridHtml($gridSize) {
         $html = "";
 
@@ -43,6 +46,10 @@ class SteampunkView
         return $html;
     }
 
+    /**
+     * TODO: Description
+     * @return string
+     */
     private function formButtons() {
         $html = "";
 
