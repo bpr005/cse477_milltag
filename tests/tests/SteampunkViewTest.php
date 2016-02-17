@@ -57,7 +57,7 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
         $this->assertContains('input type="submit" value="Discard" name="discard" id="discard"', $html);
         $this->assertContains('input type="submit" value="Open Valve" name="openValve" id="openValve"', $html);
         $this->assertContains('input type="submit" value="Give Up" name="giveUp" id="giveUp"', $html);
-        
+
     }
 }
 
