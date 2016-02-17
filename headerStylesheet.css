@@ -1,0 +1,24 @@
+/* Reset CSS */
+html, body, header, footer, nav, article, section, figure,
+figcaption, h1, h2, h3, ul, li, body, div, p, img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    float: none;
+}
+
+p.header img {
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+p.header {
+    margin: 0.5em;
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+/* Reset CSS */
+html, body, header, footer, nav, article, section, figure,
+figcaption, h1, h2, h3, ul, li, body, div, p, img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    float: none;
+}
+
+/* Grid CSS */
+
+div.game {
+    display: inline-block;
+    margin: 1em auto;
+    border: thin solid black;
+    padding: 1em 0;
+}
+
+div.game p {
+    margin: 0;
+}
+
+div.game div.row {
+    display: block;
+    padding: 0;
+    height: 50px;
+}
+
+div.game div.cell {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    white-space: nowrap;
+    border: thin black solid; // TO BE REMOVED
+}
+
+div.cell input {
+    border: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-indent: -999px;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+}
+
+/* Game Option CSS */
+
+div.radioButtons {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div.radioButtons img {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+input[type="radio"] {
+    margin-right: 1em;
+}
+
+/* Miscellaneous CSS */
+
+form {
+    text-align: center;
+}
+
+p.pageText {
+    font-size: 2em;
+}
