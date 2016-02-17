@@ -59,7 +59,7 @@ class Steampunk
         return $this->gameSize;
     }
 
-    public function getGridSize() {
+    public function getGridSize() { //This is just for testing purposes, this should be the size of the game!
         return count($this->grid);
     }
 

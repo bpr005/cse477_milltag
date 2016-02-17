@@ -13,7 +13,7 @@ class SteampunkTest extends \PHPUnit_Framework_TestCase
 		$steampunk = new Steampunk\Steampunk(self::SEED);
 		$this->assertInstanceOf("Steampunk\Steampunk", $steampunk);
 	}
-	public function test_check1() {
+	public function test_creategame() {
 		$steampunk = new Steampunk\Steampunk(self::SEED);
 		$steampunk->newGame(5);
 		$this->assertEquals(5, $steampunk->getGameSize());
@@ -23,6 +23,10 @@ class SteampunkTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals(6, $steampunk->getGameSize());
 		$this->assertEquals(6, $steampunk->getGridSize());
 
+	}
+	public function test_player_functionality() {
+
+		$steampunk = new Steampunk\Steampunk(self::SEED);
 
 		$steampunk->newTurn("Cam");
 		$this->assertEquals("Cam", $steampunk->getCurrentPlayer());
@@ -39,8 +43,15 @@ class SteampunkTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals("Bonnie", $steampunk->getCurrentPlayer());
 		$steampunk->alternatePlayer();
 		$this->assertEquals("Max", $steampunk->getCurrentPlayer());
+	}
+	public function test_grid() {
 
-		//game of size 6...
+		$steampunk = new Steampunk\Steampunk(self::SEED);
+		$steampunk->newGame(6);
+
+		$this->assertEquals(6, $steampunk->getGameSize());
+
+		//diagonally checking to make sure we have a 6 by 6 grid
 		$steampunk->addPipe("tee-esw", 1,1);
 		$this->assertEquals("tee-esw", $steampunk->getTileContents(1,1));
 		$steampunk->addPipe("cap-e", 2, 2);
@@ -54,7 +65,6 @@ class SteampunkTest extends \PHPUnit_Framework_TestCase
 		$steampunk->addPipe("ninety-es", 6,6);
 		$this->assertEquals("ninety-es", $steampunk->getTileContents(6,6));
 
-		$this->assertNotEquals(7, $steampunk->getGameSize());
 	}
 
 }
