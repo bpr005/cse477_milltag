@@ -11,5 +11,5 @@ $controller = new \Steampunk\SteampunkController($steampunk, $_POST);
 
 
 
-header('location: ' . $controller->getPage());
+header('location: ' . $controller->getNextPage());
 ?>
