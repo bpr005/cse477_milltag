@@ -37,7 +37,7 @@ div.game div.cell {
     min-height: 50px;
     min-width: 50px;
     white-space: nowrap;
-    border: thin black solid; // TO BE REMOVED
+    /* border: thin black solid; */
 }
 
 div.cell input {

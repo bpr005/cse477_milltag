@@ -26,8 +26,8 @@ $view = new Steampunk\SteampunkView($steampunk);
 
     <body>
         <?php echo $header->presentHeader(); ?>
-        <?php echo $view->gridHtml(); ?>
-        <!-- Trial HTML: To be moved into the View class after testing -->
+        <?php echo $view->formHtml(); ?>
+        <!-- Trial HTML: To be moved into the View class after the checkpoint -->
         <form method="post" action="game-post.php">
             <div class="game">
                 <div class="row">
@@ -36,11 +36,8 @@ $view = new Steampunk\SteampunkView($steampunk);
                     </div><div class="cell">
                         <p><img src="images\straight-h.png" width="50" height="50" alt="Pipe"></p>
                     </div><div class="cell">
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cell">
+                        <p><img src="images\leak-w.png" width="50" height="50" alt="Pipe"></p>
+                    </div><div class="cell">
 
                     </div><div class="cell">
 
@@ -54,7 +51,73 @@ $view = new Steampunk\SteampunkView($steampunk);
                     </div><div class="cell">
 
                     </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
                         <p><img src="images\gauge-0.png" width="50" height="50" alt="Base Gauge"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+                        <p><img src="images\gauge-top-190.png" width="50" height="50" alt="Top Gauge"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+
+                    </div><div class="cell">
+                        <img src="images\cap-e.png" width="50" height="50" alt="Pipe Option 3">
+                    </div><div class="cell">
+                        <img src="images\tee-esw.png" width="50" height="50" alt="Pipe">
+                    </div><div class="cell">
+                        <p><img src="images\straight-h.png" width="50" height="50" alt="Pipe"></p>
+                    </div><div class="cell">
+                        <p><img src="images\straight-h.png" width="50" height="50" alt="Pipe"></p>
+                    </div><div class="cell">
+                        <p><img src="images\gauge-190.png" width="50" height="50" alt="Base Gauge"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <p><img src="images\valve-open.png" width="50" height="50" alt="Closed Valve"></p>
+                    </div><div class="cell">
+                        <p><img src="images\straight-h.png" width="50" height="50" alt="Pipe"></p>
+                    </div><div class="cell">
+                        <p><img src="images\ninety-wn.png" width="50" height="50" alt="Pipe"></p>
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
+                    </div><div class="cell">
+
                     </div>
                 </div>
             </div>

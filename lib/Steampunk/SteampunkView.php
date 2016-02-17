@@ -22,24 +22,26 @@ class SteampunkView
     }
 
     /**
-     * TODO: Description
-     * @return string
+     * Creates the HTML for the entire form on the Steampunked gameplay page
+     * @return string, the generated HTML code
      */
-    public function gridHtml() {
+    public function formHtml() {
         // Obtain the width/height of the grid from the Steampunk model object
         $gameSize = $this->steampunk->getGameSize();
+        // Obtain player turn information from the Model
+        $turnHtml = "<p></p>";
         // Generate the HTML for the grid
-        $htmlText = $this->formGridHtml($gameSize) . $this->formButtons();
+        $htmlText = $this->gridHtml($gameSize) . $turnHtml . $this-> radioHtml() . $this->buttonsHtml();
 
         return $htmlText;
     }
 
     /**
      * TODO: Description
-     * @param $gridSize
-     * @return string
+     * @param $gridSize, an integer indicating the number of cells in each dimension of rhe grid
+     * @return string, the generated HTML code
      */
-    private function formGridHtml($gridSize) {
+    private function gridHtml($gridSize) {
         $html = "";
 
 
@@ -48,9 +50,19 @@ class SteampunkView
 
     /**
      * TODO: Description
-     * @return string
+     * @return string, the generated HTML code
      */
-    private function formButtons() {
+    private function radioHtml() {
+        $html = "";
+
+        return $html;
+    }
+
+    /**
+     * TODO: Description
+     * @return string, the generated HTML code
+     */
+    private function buttonsHtml() {
         $html = "";
 
         return $html;
