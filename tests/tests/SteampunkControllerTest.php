@@ -26,14 +26,30 @@ class SteampunkControllerTest extends \PHPUnit_Framework_TestCase
 
 	public function test_rotatePiece(){
 		$steampunk = new Steampunk(self::SEED);
-		$controller = new Controller($steampunk, array());
+		$controller = new Controller($steampunk, array('rotate' => 'Rotate',
+													   '' => 'on'));
 
 		$this->assertEquals('game.php', $controller->getNextPage());
 	}
 
+	public function test_discardPiece(){
+		$steampunk = new Steampunk(self::SEED);
+		$controller = new Controller($steampunk, array('discard' => 'Discard',
+													   '' => 'on'));
+
+		$this->assertEquals('game.php', $controller->getNextPage());
+	}
+
+	public function test_openValve(){
+		$steampunk = new Steampunk(self::SEED);
+		$controller = new Controller($steampunk, array('openValve' => 'Open Valve'));
+
+		$this->assertEquals('endGame.php', $controller->getNextPage());
+	}
+
 	public function test_giveUp(){
 		$steampunk = new Steampunk(self::SEED);
-		$controller = new Controller($steampunk, array());
+		$controller = new Controller($steampunk, array('giveUp' => 'Give Up'));
 
 		$this->assertEquals('endGame.php', $controller->getNextPage());
 	}
