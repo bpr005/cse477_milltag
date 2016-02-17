@@ -51,6 +51,13 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
 
         /* Check for the presence of at least one valve and gauge (should positioning be checked as well?) */
 
+        /* Check for the presence of the turn message on the page */
+        $turnString = $steampunk->getCurrentPlayer() . "it is your turn";
+        $this->assertContains($turnString, $html);
+
+        /* Check that the appropriate number of radio buttons have been created
+           and that each is associated with an image label */
+
         /* Check that the 4 required buttons are created */
         $this->assertContains('div class="buttons"', $html);
         $this->assertContains('input type="submit" value="Rotate" name="rotate" id="rotate"', $html);
