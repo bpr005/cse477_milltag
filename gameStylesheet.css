@@ -9,6 +9,8 @@ figcaption, h1, h2, h3, ul, li, body, div, p, img {
     float: none;
 }
 
+/* Grid CSS */
+
 div.game {
     display: inline-block;
     margin: 1em auto;
@@ -31,6 +33,7 @@ div.game div.cell {
     height: 50px;
     min-height: 50px;
     min-width: 50px;
+    border: thin black solid; // TO BE REMOVED
 }
 
 div.cell input {
@@ -43,4 +46,24 @@ div.cell input {
     font-size: 0;
     line-height: 0;
     display: block;
+}
+
+/* Game Option CSS */
+
+div.radioButtons img {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Miscellaneous CSS */
+
+form {
+    text-align: center;
+}
+
+p.pageText {
+    font-size: 2em;
 }
