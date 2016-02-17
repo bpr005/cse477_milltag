@@ -9,7 +9,7 @@ figcaption, h1, h2, h3, ul, li, body, div, p, img {
     float: none;
 }
 
-img {
+p.header img {
     width: 600px;
     text-align: center;
     margin-left: auto;
@@ -18,7 +18,7 @@ img {
     margin-bottom: 2em;
 }
 
-p {
+p.header {
     margin: 0.5em;
     text-align: center;
 }
