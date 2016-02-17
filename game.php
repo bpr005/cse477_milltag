@@ -87,7 +87,7 @@ $view = new Steampunk\SteampunkView($steampunk);
                     </div><div class="cell">
 
                     </div><div class="cell">
-                        <p><img src="images/gauge-top-190.png" width="50" height="50" alt="Top Gauge"></p>
+                        <p><img src="images/gauge-top-0.png" width="50" height="50" alt="Top Gauge"></p>
                     </div>
                 </div>
                 <div class="row">
@@ -102,12 +102,12 @@ $view = new Steampunk\SteampunkView($steampunk);
                     </div><div class="cell">
                         <p><img src="images/straight-h.png" width="50" height="50" alt="Pipe"></p>
                     </div><div class="cell">
-                        <p><img src="images/gauge-190.png" width="50" height="50" alt="Base Gauge"></p>
+                        <p><img src="images/gauge-0.png" width="50" height="50" alt="Base Gauge"></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="cell">
-                        <p><img src="images/valve-open.png" width="50" height="50" alt="Closed Valve"></p>
+                        <p><img src="images/valve-closed.png" width="50" height="50" alt="Closed Valve"></p>
                     </div><div class="cell">
                         <p><img src="images/straight-h.png" width="50" height="50" alt="Pipe"></p>
                     </div><div class="cell">
