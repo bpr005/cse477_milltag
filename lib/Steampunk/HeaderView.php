@@ -25,7 +25,7 @@ class HeaderView
      * @return string, the HTML code for the game page header
      */
     public function presentHeader() {
-        $html = '<p class="header"><img src="images\title.png" width="600" height="104" alt="Steampunked Title Image"</p>';
+        $html = '<p class="header"><img src="images/title.png" width="600" height="104" alt="Steampunked Title Image"></p>';
         return $html;
     }
 

@@ -27,6 +27,5 @@ $view = new Steampunk\SteampunkView($steampunk);
     <body>
         <!-- TODO: header tag here with the Steampunked game image -->
         <?php echo $header->presentHeader(); ?>
-        <?php echo $view->gridHtml(); ?>
     </body>
 </html>

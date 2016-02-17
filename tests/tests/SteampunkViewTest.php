@@ -22,19 +22,29 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * TODO: Description
-     */
-    public function test_presentHeader() {
-
-    }
-
-    /**
      * Checks the HTML output of the gridHtml function
      *  (a) Asserts that a game grid of the correct size is created
      *  (b) Asserts that all buttons are created
      */
     public function test_formHtml() {
 
+        $steampunk = new Steampunk\Steampunk(self::SEED);
+        $view = new Steampunk\SteampunkView($steampunk);
+
+        // Call the formHtml function to obtain the Html for the initial game state (no moves have been made)
+        $html = $view->formHtml();
+
+        // Check that the grid is of the correct size
+        $gridSize = $steampunk->getGameSize();
+
+        // Check that the initial pipes and gauges are present
+
+        // Check that the 4 required buttons are created
+        $this->assertContains('div class="buttons"', $html);
+        $this->assertContains('input type="submit" value="Rotate" name="rotate" id="rotate"', $html);
+        $this->assertContains('input type="submit" value="Discard" name="discard" id="discard"', $html);
+        $this->assertContains('input type="submit" value="Open Valve" name="openValve" id="openValve"', $html);
+        $this->assertContains('input type="submit" value="Give Up" name="giveUp" id="giveUp"', $html);
     }
 }
 

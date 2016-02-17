@@ -26,7 +26,7 @@ $view = new Steampunk\SteampunkView($steampunk);
     <body>
         <?php echo $header->presentHeader(); ?>
 
-        <form method="post" action="">
+        <form method="post" action="welcome-post.php">
             <p>
                 <label for="playerOne">Enter the name for Player 1:</label>
                 <input type="text" name="playerOne" id="playerOne">
