@@ -57,6 +57,18 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
 
         /* Check that the appropriate number of radio buttons have been created
            and that each is associated with an image label */
+        $this->assertContains('div class="radioButtons"', $html);
+        $this->assertContains('&lt;label for="1"$gt;&lt;img src=', $html);
+        $this->assertContains('input type="radio" name="pipeOption" id="1"', $html);
+        $this->assertContains('&lt;label for="2"$gt;&lt;img src=', $html);
+        $this->assertContains('input type="radio" name="pipeOption" id="2"', $html);
+        $this->assertContains('&lt;label for="3"$gt;&lt;img src=', $html);
+        $this->assertContains('input type="radio" name="pipeOption" id="3"', $html);
+        $this->assertContains('&lt;label for="4"$gt;&lt;img src=', $html);
+        $this->assertContains('input type="radio" name="pipeOption" id="4"', $html);
+        $this->assertContains('&lt;label for="5"$gt;&lt;img src=', $html);
+        $this->assertContains('input type="radio" name="pipeOption" id="5"', $html);
+
 
         /* Check that the 4 required buttons are created */
         $this->assertContains('div class="buttons"', $html);
