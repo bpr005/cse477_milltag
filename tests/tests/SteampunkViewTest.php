@@ -24,7 +24,9 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
     /**
      * Checks the HTML output of the gridHtml function
      *  (a) Asserts that a game grid of the correct size is created
-     *  (b) Asserts that all buttons are created
+     *  (b) TODO: Asserts the initial state of the grid (two values and two full gauges)
+     *  (c) Asserts that the correct number of radio buttons are present and each is associated with an image label
+     *  (b) Asserts that all 4 buttons are created
      */
     public function test_formHtml() {
 
@@ -68,7 +70,6 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
         $this->assertContains('input type="radio" name="pipeOption" id="4"', $html);
         $this->assertContains('&lt;label for="5"$gt;&lt;img src=', $html);
         $this->assertContains('input type="radio" name="pipeOption" id="5"', $html);
-
 
         /* Check that the 4 required buttons are created */
         $this->assertContains('div class="buttons"', $html);
