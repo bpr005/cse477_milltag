@@ -26,12 +26,35 @@ class SteampunkTest extends \PHPUnit_Framework_TestCase
 
 		$steampunk->newTurn("Cam");
 		$this->assertEquals("Cam", $steampunk->getCurrentPlayer());
-
 		$steampunk->newTurn("Bonnie");
 		$this->assertEquals("Bonnie", $steampunk->getCurrentPlayer());
 
-		$steampunk->addPipe("tee-esw", 1,2);
-		$this->assertEquals("tee-esw", $steampunk->getTileContents(1,2));
+		$steampunk->setPlayer1("Max");
+		$steampunk->setPlayer2("Bonnie");
+		$this->assertEquals("Max", $steampunk->getPlayer1());
+		$this->assertEquals("Bonnie", $steampunk->getPlayer2());
+		$steampunk->newTurn("Max");
+		$this->assertEquals("Max", $steampunk->getCurrentPlayer());
+		$steampunk->alternatePlayer();
+		$this->assertEquals("Bonnie", $steampunk->getCurrentPlayer());
+		$steampunk->alternatePlayer();
+		$this->assertEquals("Max", $steampunk->getCurrentPlayer());
+
+		//game of size 6...
+		$steampunk->addPipe("tee-esw", 1,1);
+		$this->assertEquals("tee-esw", $steampunk->getTileContents(1,1));
+		$steampunk->addPipe("cap-e", 2, 2);
+		$this->assertEquals("cap-e", $steampunk->getTileContents(2, 2));
+		$steampunk->addPipe("cap-n", 3, 3);
+		$this->assertEquals("cap-n", $steampunk->getTileContents(3,3));
+		$steampunk->addPipe("gauge-0", 4,4);
+		$this->assertEquals("gauge-0", $steampunk->getTileContents(4,4));
+		$steampunk->addPipe("leak-e", 5,5);
+		$this->assertEquals("leak-e", $steampunk->getTileContents(5,5));
+		$steampunk->addPipe("ninety-es", 6,6);
+		$this->assertEquals("ninety-es", $steampunk->getTileContents(6,6));
+
+		$this->assertNotEquals(7, $steampunk->getGameSize());
 	}
 
 }
