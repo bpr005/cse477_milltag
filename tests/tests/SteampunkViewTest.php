@@ -33,7 +33,7 @@ class SteampunkViewTest extends \PHPUnit_Framework_TestCase
      *  (a) Asserts that a game grid of the correct size is created
      *  (b) Asserts that all buttons are created
      */
-    public function test_gridHtml() {
+    public function test_formHtml() {
 
     }
 }
