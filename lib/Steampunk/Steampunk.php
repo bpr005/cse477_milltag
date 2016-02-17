@@ -40,7 +40,6 @@ class Steampunk
         return $this->currentPlayer;
     }
 
-    // Added by BR for use in the SteampunkView class. This comment can be deleted.
     public function getGameSize() {
         return $this->gameSize;
     }
@@ -61,7 +60,7 @@ class Steampunk
 
     }
 
-    private $gameSize; // BR: Cam, what is your plan for this variable? An integer since we only have square grids?
+    private $gameSize;
     private $currentPlayer;
     private $player1;
     private $player2;

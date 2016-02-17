@@ -5,7 +5,7 @@ $view = new Steampunk\SteampunkView($steampunk);
 
 /**
  * Created by PhpStorm.
- * User: Bonnie Reiff
+ * Team Milltag
  * Project 1: Steampunked
  * Class: index.php (Welcome Page for the Steampunked game)
  */
